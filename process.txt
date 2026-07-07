@@ -1,0 +1,8 @@
+backend>server.js>in terminer
+npm install express mongoose multer bcrypt cloudinary cors dotenv jsonwebtoken validator
+
+import express in server.js and in package.js add the type:module
+write the code on server.js 
+and to run in terminer npm start then in coreme localhost:40000 you see the api working that mean app run rights
+
+to restat the server install the nodemon and in packge write the  "server": "nodemon server.js" and in terminter npm run server then when you chnge the content and refrece it it will restart the server

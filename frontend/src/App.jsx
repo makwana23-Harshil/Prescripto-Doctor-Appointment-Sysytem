@@ -1,0 +1,42 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import Doctor from './pages/Doctor';
+import Login from './pages/Login';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import My_Profile from './pages/My_Profile';
+import My_Appointments from './pages/My_Appointments';
+import Appointment from './pages/Appointment';
+import Navbar from './components/Navbar';
+import Footer from './components/footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+function App() {
+  return (
+    <div className="mx-4 sm:mx-[10%]">
+      <ToastContainer />
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/doctors' element={<Doctor/>}/>
+        <Route path='/doctors/:speciality' element={<Doctor/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+        <Route path='/my_profile' element={<My_Profile/>}/>
+        <Route path='/my-appointments' element={<My_Appointments/>}/>
+        <Route path='/appointment/:docId' element={<Appointment/>}/>
+      </Routes>
+      <Footer/>
+    </div>
+    
+  );
+}
+
+export default App;
+
