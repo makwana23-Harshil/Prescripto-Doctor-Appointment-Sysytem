@@ -73,7 +73,8 @@ const Appointment = () => {
         const slotDate = day + '_' + month + '_' + year
         const slotTime = formattedTime
 
-        const isBooked = docInfo.slots_booked?.[slotDate]?.includes(slotTime) || false
+        //const isBooked = docInfo.slots_booked?.[slotDate]?.includes(slotTime) || false
+        const isBooked = docInfo?.slots_booked?.[slotDate]?.includes(slotTime) || false;
         const isSlotAvailable = !isBooked
 
         if (isSlotAvailable) {
