@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/header';
+import Header from '../components/Header';
 import Speciality_menu from '../components/Speciality_Menu';
 import Top_Doctors from '../components/Top_Doctors';
 import Banner from '../components/Banner';
