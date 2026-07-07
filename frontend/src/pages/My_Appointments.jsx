@@ -56,6 +56,7 @@ const My_Appointments = () => {
 
   //for USING THE PAYMENT FEATURE ADD THE YOUR KEY ND SECRET KEY FROM THE WEBSITE AND PASTE IT TO BACKEND .ENV
   const initPay = (order, appointmentId) => {
+    console.log("Razorpay Key:", import.meta.env.VITE_RAZORPAY_KEY_ID);
     const options = {
       key: import.meta.env.VITE_RAZORPAY_KEY_ID,
       amount: order.amount,
