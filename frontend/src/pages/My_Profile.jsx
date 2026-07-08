@@ -142,14 +142,17 @@ const My_Profile = () => {
             <p className='text-sm text-gray-500'>Gender</p>
             {
               isEdit
-                ? <select
-                  className='w-full border border-gray-300 rounded-md p-2 mt-1'
-                  onChange={(e) => setUserData(prev => ({ ...prev, gender: e.target.value }))}
-                  value={userData.gender}
-                >
-                  <option value='Male'>Male</option>
-                  <option value='Female'>Female</option>
-                </select>
+                ? <select className="w-full border border-gray-300 rounded-md p-2 mt-1" value={userData.gender}
+                    onChange={(e) => {
+                  console.log("Selected:", e.target.value);
+                  setUserData(prev => ({...prev,
+                    gender: e.target.value
+                  }));
+                  }}>
+                  <option value="Not selected">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
                 : <p className='mt-1'>{userData.gender}</p>
             }
           </div>
