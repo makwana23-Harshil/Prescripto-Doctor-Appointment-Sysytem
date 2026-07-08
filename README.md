@@ -36,17 +36,33 @@ All appointments view
 Platform management
 
 # Tech Stack
---Frontend:** React.js, Tailwind CSS, React Router, Axios
---Backend:** Node.js, Express.js, MongoDB, Mongoose
---Authentication:** JWT, Bcrypt
---Others:** Cloudinary, Stripe
+**Frontend**
+- React.js
+- Tailwind CSS
+- React Router
+- Axios
 
+**Backend**
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+**Authentication**
+- JWT
+- Bcrypt
+
+**Other**
+- Cloudinary
+- Stripe
 # Project Structure
+```text
 Prescripto-Doctor-Appointment-System/
 │── admin/
 │── backend/
 │── frontend/
 └── README.md
+```
 
 # Installation
 
@@ -64,7 +80,7 @@ cd ../admin && npm install
 
 ## Environment Variables
 --Create a `.env` file inside the `backend` folder.
-
+```env
 MONGODB_URI=
 JWT_SECRET=
 ADMIN_EMAIL=
@@ -73,6 +89,7 @@ CLOUDINARY_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_SECRET_KEY=
 STRIPE_SECRET_KEY=
+```
 
 # Running the Project
 
