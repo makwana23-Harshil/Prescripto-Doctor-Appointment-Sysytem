@@ -55,6 +55,10 @@ Platform management
 **Other**
 - Cloudinary
 - Stripe
+  
+**Payment**
+- Razorpay
+  
 # Project Structure
 ```text
 Prescripto-Doctor-Appointment-System/
@@ -90,7 +94,10 @@ CLOUDINARY_API_KEY=
 CLOUDINARY_SECRET_KEY=
 STRIPE_SECRET_KEY=
 ```
-
+--Create a `.env` file inside the `Frontend` folder.
+```env
+VITE_RAZORPAY_KEY_ID =''
+```
 # Running the Project
 
 Start the backend:
