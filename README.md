@@ -4,8 +4,8 @@ A full-stack Doctor Appointment Booking System built with the MERN Stack. The ap
 
 ## Live Demo
 
-**User Panel**
-https://prescripto-doctor-appointment-sysyt-xi.vercel.app/
+**User panel**
+https://prescripto-doctor-appointment-sysyt-xi.vercel.app
 
 **Doctor Panel**
 https://prescripto-doctor-appointment-sysyt-lovat.vercel.app/
