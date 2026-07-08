@@ -164,7 +164,8 @@ const My_Profile = () => {
                   className='w-full border border-gray-300 rounded-md p-2 mt-1'
                   type='date'
                   onChange={(e) => setUserData(prev => ({ ...prev, dob: e.target.value }))}
-                  value={userData.dob}
+                  //value={userData.dob}
+                  value={userData.dob === "Not selected" ? "" : userData.dob}
                 />
                 : <p className='mt-1'>{userData.dob}</p>
             }
